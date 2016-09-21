@@ -9,16 +9,26 @@
     <link rel="stylesheet" type="text/css" href="css/basic.css" />
 </head>
 <body>
+<div ng-app="myApp" ng-controller="myCtrl">
 
-<div id="flipbook">
-    <div><span class="text">Page 1</span></div>
-    <div><span class="text">Page 2</span></div>
-    <div><span class="text">Page 3</span></div>
-    <div><span class="text">Page 4</span></div>
-    <div><span class="text">Page 5</span></div>
-    <div><span class="text">Page 6</span></div>
-    <div><span class="text">Page 7</span></div>
+
+
+        Enter Page 1 Content: <input type="text" ng-model="page1Content"><br>
+        Enter Page 2 Content: <input type="text" ng-model="page2Content"><br>
+        Enter Page 3 Content: <input type="text" ng-model="page3Content"><br>
+
+        <br>
+        OutPut : {{pageContent}}
+
+    <div id="flipbook">
+        <div><span class="text"> page 1 <br> <input type="text" ng-model="page1Content"></span></div>
+        <div><span class="text">Page 2 <br> <input type="text" ng-model="page2Content"></span></div>
+        <div><span class="text">Page 3 <br> <input type="text" ng-model="page3Content"></span></div>
+        <div><span class="text">Page 3 <br> <input type="text" ng-model="page3Content"></span></div>
+
+    </div>
 </div>
+
 
 </body>
 <script type="text/javascript" src="app.js"></script>
